@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.quote-box-project {
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+    padding: 30px 40px;
+    border-radius: 8px;
+    border-left: 8px solid #ffffff;
+    position: relative;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.quote-box-project::before {
+    content: '“';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 6em;
+    color: rgb(255, 255, 255);
+}
+
+.quote-box-project blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    min-height: 120px;
+    margin: 0;
+}
+
+#textoCitacao {
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+#autorCitacao {
+    font-weight: bold;
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+/* Estilo da imagem do autor */
+#autorImagem {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* Botão estilizado */
+.quote-box-project button {
+    background-color: #9c9c9c;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.quote-box-project button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Classe para mostrar elementos com fade */
+.show {
+    opacity: 1 !important;
+}
+
+/* Audio ajustado */
+#musicaCitacao {
+    width: 100%;
+    margin-top: 10px;
+}
